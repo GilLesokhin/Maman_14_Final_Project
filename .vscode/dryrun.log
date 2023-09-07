@@ -1,0 +1,16 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/gil-laptop/Documents/VsCode/maman14 Final/maman14 Final'
+gcc -Wall -ansi -pedantic mylist.c -c -o  mylist.o
+ 
+gcc -Wall -ansi -pedantic myhash.c -c -o  myhash.o
+gcc -Wall -ansi -pedantic my_assembler.c -c -o  my_assembler.o
+gcc -Wall -ansi -pedantic str_util.c -c -o  str_util.o
+cc -Wall -ansi -pedantic assembler_util.c -c -o  assembler_util.o
+cc -Wall -ansi -pedantic symbol_table.c -c -o  symbol_table.o
+cc -Wall -ansi -pedantic cmd_list.c -c -o  cmd_list.o
+cc -Wall -ansi -pedantic macro_map.c -c -o  macro_map.o
+gcc -Wall -ansi -pedantic pre_prossesor.c -c -o  pre_prossesor.o
+cc -Wall -ansi -pedantic reserv_table.c -c -o  reserv_table.o
+gcc -Wall -ansi -pedantic mylist.o myhash.o my_assembler.o str_util.o  assembler_util.o symbol_table.o cmd_list.o macro_map.o pre_prossesor.o reserv_table.o -o my_assembler
+make: Leaving directory '/home/gil-laptop/Documents/VsCode/maman14 Final/maman14 Final'
+ 
